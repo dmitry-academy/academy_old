@@ -2,6 +2,8 @@ package by.academy.lesson3.arrays;
 
 class ArrayDemo {
 	public static void main(String[] args) {
+//		int[] array1 = new int[5];
+//		int array2[] = new int[5];
 
 		// Объявили массив интов
 		int[] anArray;
@@ -22,8 +24,8 @@ class ArrayDemo {
 		anArray[6] = 700;
 		anArray[7] = 800;
 		anArray[8] = 900;
-		anArray = null;
-		
+		anArray[123] = 123123;
+
 		System.out.println("Element at index 0: " + anArray[0]);
 		System.out.println("Element at index 1: " + anArray[1]);
 		System.out.println("Element at index 2: " + anArray[2]);
