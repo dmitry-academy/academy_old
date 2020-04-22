@@ -18,12 +18,13 @@ public class MatcherReplaceReplacementExample {
  
 		while (matcher.find()) {
 			matcher.appendReplacement(sb, "Joe Blocks ");
-//			System.out.println(matcher.group(0));
+			System.out.println(matcher.group(0));
+//			System.out.println(matcher.group(1));
+//			System.out.println(matcher.start(1));
 			System.out.println(matcher.group(1));
-			System.out.println(matcher.start(1));
-			System.out.println(matcher.end(1));
 
-//			System.out.println(matcher.group(2));
+			System.out.println(matcher.group(2));
+			System.out.println(matcher.group(3));
 			System.out.println("-------------------");
 //			System.out.println(sb.toString());
 		}
