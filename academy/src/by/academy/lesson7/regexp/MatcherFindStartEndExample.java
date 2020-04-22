@@ -11,7 +11,7 @@ public class MatcherFindStartEndExample {
 
 		Pattern pattern = Pattern.compile("is");
 		Matcher matcher = pattern.matcher(text);
-
+ 
 		int count = 0;
 		while (matcher.find()) {
 			count++;
