@@ -1,14 +1,13 @@
-package by.academy.money;
+package by.academy.lesson5.money;
 
 public class Money {
-	long rub;
-	char kop;
+	private long rub;
+	private char kop;
 
 	public Money(double value) {
 		transferToRub(value);
 	}
-	
-	
+
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
@@ -55,28 +54,20 @@ public class Money {
 //		return addResult;
 //	}
 //
-	public double subtraction(Money valueForSub) {
-		//
-		rub -= valueForSub.transferToRub();
-		kop -= valueForSub.transferToKop();
-		if ((int) kop < 0) {
-			rub--;
-			kop = (char) (100 + kop);
-		}
-		double subResult = rub + (kop * 0.01);
-		return subResult;
+	public void subtraction(Money money) {
 	}
 
-	public double division(int divider) {
+	public void subtraction(long rub) {
+	}
+
+	public void subtraction(char kop) {
+	}
+
+	public void subtraction(long rub, char kop) {
+	}
+
+	public void division(int divider) {
 		rub /= divider;
-		return divResult;
+		kop /= divider;
 	}
-
-	public double division(int valueForDiv) {
-		long valDiv1 = (rub * 100) + kop;
-		long valDiv2 = (valueForDiv.setRub() * 100) + (int) valueForDiv.setKop();
-		double divResult = (double) valDiv1 / valDiv2;
-		return divResult;
-	}
-
 }

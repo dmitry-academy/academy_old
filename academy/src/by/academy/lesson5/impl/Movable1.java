@@ -1,6 +1,8 @@
 package by.academy.lesson5.impl;
 
-public interface Movable {
+public interface Movable1 {
+	
+	final static int DISTANCE = 1000;
 
 	void move();
 
