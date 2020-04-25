@@ -1,4 +1,4 @@
-package by.academy.deals;
+package by.academy.lesson5.deals;
 
 public class Program {
 

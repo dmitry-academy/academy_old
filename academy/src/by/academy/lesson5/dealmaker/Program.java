@@ -1,8 +1,7 @@
-package by.academy.dealmaker;
+package by.academy.lesson5.dealmaker;
 
 import java.util.Scanner;
 
-import by.academy.impl.Car;
 
 public class Program {
 

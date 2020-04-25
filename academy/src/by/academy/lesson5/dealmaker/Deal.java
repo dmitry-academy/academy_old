@@ -1,4 +1,4 @@
-package by.academy.dealmaker;
+package by.academy.lesson5.dealmaker;
 import java.util.Date;
 
 public class Deal {

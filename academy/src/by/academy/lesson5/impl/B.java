@@ -1,4 +1,4 @@
-package by.academy.impl;
+package by.academy.lesson5.impl;
 
 public class B extends A {
 

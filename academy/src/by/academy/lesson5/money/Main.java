@@ -1,9 +1,9 @@
-package by.academy.money;
+package by.academy.lesson5.money;
 
 public class Main {
 
 	public static void main(String[] args) {
-Math.sqrt();
+		Math.sqrt(1);
 	}
 
 }

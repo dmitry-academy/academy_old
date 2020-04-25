@@ -1,4 +1,4 @@
-package by.academy.classes;
+package by.academy.lesson5.classes;
 
 public class Car {
 

@@ -1,4 +1,4 @@
-package by.academy.dealmaker;
+package by.academy.lesson5.dealmaker;
 public class Party {
 
 	private String name;
