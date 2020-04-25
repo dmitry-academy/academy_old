@@ -16,7 +16,7 @@ public class Program {
 		Deal dealBetweenPetiaAndVasia = new Deal(buyer, seller, products);
 
 		dealBetweenPetiaAndVasia.deal();
-
+		
 		System.out.println(dealBetweenPetiaAndVasia.getFullPrice());
 
 	}

@@ -1,5 +1,9 @@
 package by.academy.lesson5.deals;
 
+import by.academy.lesson8.annotation.B;
+import by.academy.lesson8.annotation.Version;
+
+@Version(info = "alala")
 public class Deal {
 
 	private User buyer;
@@ -58,4 +62,5 @@ public class Deal {
 		}
 		this.fullPrice = summ;
 	}
+	
 }
