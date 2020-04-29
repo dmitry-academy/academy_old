@@ -15,5 +15,6 @@ public class GenericDemo {
 	public static void test(SimpleBox<Car> b) {
 		Car c = b.getItem();
 		c.move();
+
 	}
 }
