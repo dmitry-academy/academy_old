@@ -11,11 +11,11 @@ class NumberBox<T extends Number> {
 		System.out.println(value);
 	}
 
-	public void printInt(NumberBox<? extends Integer> value) {
+	public void printExtends(NumberBox<? extends Integer> value) {
 		System.out.println(value);
 	}
 
-	public void printDouble(NumberBox<? super Number> value) {
+	public void printSuper(NumberBox<? super Double> value) {
 		System.out.println(value);
 	}
 }

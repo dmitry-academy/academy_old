@@ -8,8 +8,12 @@ public class Matrix<T> {
 	}
 
 	public static void main(String[] args) {
+
 		Matrix<Double> doubleMatrix = new Matrix<>(new Double[2]);
+		Matrix<Double> doubleMatrix1 = new Matrix<>(new Double[2]);
+
 		Matrix<Integer> integerMatrix = new Matrix<>(new Integer[4]);
+
 		Matrix<Byte> byteMatrix = new Matrix<>(new Byte[7]);
 	}
 }

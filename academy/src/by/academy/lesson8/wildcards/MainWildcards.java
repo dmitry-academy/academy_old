@@ -8,11 +8,14 @@ public class MainWildcards {
 //		NumberBox<? extends Integer> value = new asdasd
 		NumberBox<Integer> boxInteger = new NumberBox<>();
 
-		NumberBox<Number> boxNumber = new NumberBox<>();
+		NumberBox<Double> boxDouble = new NumberBox<>();
 
-		box.printInt(boxInteger);// верхняя граница
+		box.printExtends(boxInteger);
+		box.printExtends(box);// верхняя граница
 
-		box.printDouble(boxNumber);// нижняя граница
+		box.printSuper(box);// нижняя граница
+		box.printSuper(boxDouble);// нижняя граница
+		box.printSuper(boxInteger);// нижняя граница
 
 	}
 

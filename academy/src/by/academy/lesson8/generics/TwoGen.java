@@ -4,6 +4,11 @@ public class TwoGen<T, V> {
 	private T obT;
 	private V obV;
 
+	public TwoGen() {
+		this.obT = null;
+		this.obV = null;
+	}
+
 	public TwoGen(T obT, V obV) {
 		this.obT = obT;
 		this.obV = obV;
@@ -22,4 +27,3 @@ public class TwoGen<T, V> {
 		return obV;
 	}
 }
-
