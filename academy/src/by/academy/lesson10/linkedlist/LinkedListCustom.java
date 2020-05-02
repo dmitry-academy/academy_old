@@ -2,7 +2,6 @@ package by.academy.lesson10.linkedlist;
 
 public class LinkedListCustom<T> {
 
-	private Node tail;
 	private Node head;
 
 	private int size;
@@ -34,6 +33,7 @@ public class LinkedListCustom<T> {
 				Node prev = current.prev;
 				prev.next = newNode;
 				current.prev = newNode;
+				size++;
 				return;
 			}
 			current = current.next;
@@ -51,6 +51,7 @@ public class LinkedListCustom<T> {
 				Node next = current.next;
 				prev.next = next;
 				next.prev = prev;
+				size--;
 				return val;
 			}
 			current = current.next;
