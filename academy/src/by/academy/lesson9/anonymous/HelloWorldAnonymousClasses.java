@@ -1,5 +1,7 @@
 package by.academy.lesson9.anonymous;
 
+import by.academy.lesson1.Cat;
+
 public class HelloWorldAnonymousClasses {
 
 	interface HelloWorld {
@@ -36,6 +38,13 @@ public class HelloWorldAnonymousClasses {
 				name = someone;
 				System.out.println("Salut " + name);
 			}
+		};
+		Cat frenchGreeting2 = new Cat() {
+
+			public void play() {
+				System.out.println("Play with: " + getName());
+			}
+			
 		};
 
 		HelloWorld spanishGreeting = new HelloWorld() {

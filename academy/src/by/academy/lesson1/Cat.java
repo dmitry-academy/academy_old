@@ -31,4 +31,20 @@ public class Cat {
 	public void play() {
 		System.out.println("Play with: " + name);
 	}
+
+	public int getKolichestvoLap() {
+		return kolichestvoLap;
+	}
+
+	public void setKolichestvoLap(int kolichestvoLap) {
+		this.kolichestvoLap = kolichestvoLap;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 }

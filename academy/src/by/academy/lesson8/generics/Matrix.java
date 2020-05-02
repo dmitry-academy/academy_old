@@ -1,6 +1,7 @@
 package by.academy.lesson8.generics;
 
 public class Matrix<T> {
+	
 	private T[] array;
 
 	public Matrix(T[] array) {
