@@ -20,6 +20,9 @@ public class ArrayListRemoveAllDemo {
 		List<String> removeElements = List.of("C2", "A2", "AA", "F");
 		System.out.println("Содержимое arrayList до removeAll: " + arrayList);
 
+		arrayList.remove("C2");
+		System.out.println("Содержимое arrayList до removeAll: " + arrayList);
+		
 		arrayList.removeAll(removeElements);
 		System.out.println("Содержимое arrayList после removeAll: " + arrayList);
 	}

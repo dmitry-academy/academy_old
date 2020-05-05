@@ -17,7 +17,7 @@ public class ArrayListAddDemo {
 		arrayList.add("F");
 		arrayList.add("F");
 		arrayList.add(1, "A2");
-		arrayList.set(0, "C2");
+		arrayList.set(2, "C2");
 
 		System.out.println("Размер arrayList после добавления: " + arrayList.size());
 		System.out.println("Содержимое arrayList: " + arrayList);
