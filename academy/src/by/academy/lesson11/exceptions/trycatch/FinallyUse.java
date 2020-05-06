@@ -13,6 +13,7 @@ public class FinallyUse {
 
 	// Возврат изнутри try-блока
 	public static void procB() {
+		
 		try {
 			System.out.println("Внутри procB");
 			return;
@@ -31,12 +32,13 @@ public class FinallyUse {
 	}
 
 	public static void main(String[] args) {
-		try {
-			procA();
-		} catch (Exception e) {
-			System.out.println("Исключение выброшено");
-		}
-		procB();
+//		try {
+//			procA();
+//		} catch (Exception e) {
+//			System.out.println("Исключение выброшено");
+//		}
+//		procB();
 		procC();
+//		System.out.println("test");
 	}
 }

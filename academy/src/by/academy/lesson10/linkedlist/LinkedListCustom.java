@@ -24,10 +24,15 @@ public class LinkedListCustom<T> {
 	}
 
 	public void add(int index, T newVal) {
+		
+		if(head == null) {
+			head = new Node(null, null, newVal);
+			return;
+		}
+		
 		Node current = head;
 		int counter = 0;
 		while (current != null) {
-			counter++;
 			if (counter == index) {
 				Node newNode = new Node(current.prev, current, newVal);
 				Node prev = current.prev;
@@ -37,6 +42,7 @@ public class LinkedListCustom<T> {
 				return;
 			}
 			current = current.next;
+			counter++;
 		}
 	}
 
@@ -44,7 +50,6 @@ public class LinkedListCustom<T> {
 		Node current = head;
 		int counter = 0;
 		while (current != null) {
-			counter++;
 			if (counter == index) {
 				T val = current.value;
 				Node prev = current.prev;
@@ -55,6 +60,7 @@ public class LinkedListCustom<T> {
 				return val;
 			}
 			current = current.next;
+			counter++;
 		}
 		// throw exception
 		return null;
@@ -64,11 +70,11 @@ public class LinkedListCustom<T> {
 		Node current = head;
 		int counter = 0;
 		while (current != null) {
-			counter++;
 			if (counter == index) {
 				return current.value;
 			}
 			current = current.next;
+			counter++;
 		}
 		// throw exception
 		return null;
