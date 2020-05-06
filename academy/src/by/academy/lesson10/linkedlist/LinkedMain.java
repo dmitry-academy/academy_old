@@ -5,6 +5,6 @@ public class LinkedMain {
 		LinkedListCustom<Integer> custom = new LinkedListCustom<>();
 		custom.add(0, 1);
 		custom.add(1, 2);
-		System.out.println(custom.get(1));
+		System.out.println(custom.get(2));
 	}
 }
