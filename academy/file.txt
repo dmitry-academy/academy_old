@@ -1,0 +1,8 @@
+Это не ошибка!
+
+Exception in thread "main" java.io.FileNotFoundException: src\io\file.txt (Отказано в доступе)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at by.academy.lesson12.bytestreams.FileCopy.main(FileCopy.java:13)

@@ -9,7 +9,8 @@ public class ScannerDemo {
 	private static String fileName = "scan.txt";
 
 	public static void scanFile() {
-		try (FileReader fileReader = new FileReader(fileName); Scanner scanner = new Scanner(fileReader)) {
+		try (FileReader fileReader = new FileReader(fileName); 
+				Scanner scanner = new Scanner(fileReader)) {
 			while (scanner.hasNext()) {
 				if (scanner.hasNextInt()) {
 					System.out.println(scanner.nextInt() + " :int");

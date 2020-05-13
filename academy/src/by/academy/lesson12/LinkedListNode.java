@@ -3,10 +3,10 @@ package by.academy.lesson12;
 import java.util.Iterator;
 import java.util.Random;
 
-public class LinkedListNode implements Iterable {
+public class LinkedListNode implements Iterable<Integer> {
 
-	LinkedListNode next = null;
-	Integer data = null;
+	protected LinkedListNode next = null;
+	private Integer data = null;
 
 	public LinkedListNode() {
 	}
@@ -63,8 +63,9 @@ public class LinkedListNode implements Iterable {
 
 		int i = 0;
 		while (i < numLinks) {
-			this.addToHead(new LinkedListNode(random.nextInt(100)));
+			this.addToHead(new LinkedListNode(random.nextInt(10)));
 			i++;
 		}
 	}
+
 }

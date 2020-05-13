@@ -10,8 +10,8 @@ public class FileCopy {
 		FileOutputStream fileOut = null;
 
 		try {
-			fileIn = new FileInputStream("src\\io\\file.txt");
-			fileOut = new FileOutputStream("src\\io\\copied_file.txt");
+			fileIn = new FileInputStream("file.txt");
+			fileOut = new FileOutputStream("copied_file.txt");
 
 			int a;
 			while ((a = fileIn.read()) != -1) {
