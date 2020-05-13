@@ -1,4 +1,4 @@
-package by.academy.lesson11.exceptions;
+package by.academy.lesson11;
 
 public class ExceptionDemo2 {
 	public static void main(String... args) {

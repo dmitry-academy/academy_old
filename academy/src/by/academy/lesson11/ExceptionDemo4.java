@@ -1,4 +1,4 @@
-package by.academy.lesson11.exceptions;
+package by.academy.lesson11;
 
 import java.text.NumberFormat;
 import java.text.ParseException;
