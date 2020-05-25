@@ -13,9 +13,10 @@ public class MapDemo {
 		petiasApple.put("krasnie", petiasApple.get("krasnie") - 2);
 		petiasApple.remove("zelenie");
 		for (String key : petiasApple.keySet()) {
+			petiasApple.compute(key, (k, v) -> v + 1);
+
 			Integer appleNum = petiasApple.get(key);
 			System.out.println("Y peti " + key + " " + "iablok:" + appleNum);
 		}
-
 	}
 }

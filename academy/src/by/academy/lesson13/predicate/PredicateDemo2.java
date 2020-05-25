@@ -6,6 +6,8 @@ public class PredicateDemo2 {
 	public static void main(String[] args) {
 		Predicate<String> containsA = t -> t.contains("A");
 		Predicate<String> containsB = t -> t.contains("B");
-		System.out.println(containsA.and(containsB).test("ABCD"));
+		Predicate<String> containsC = t -> t.contains("C");
+
+		System.out.println(containsA.and(containsB).or(containsC).test("ABCD"));
 	}
 }
