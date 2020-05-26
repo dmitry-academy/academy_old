@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class ComparatorDemo {
+
 	public static void main(String... args) {
 		List<Integer> list = generateIntegerList(255, 10);
 		System.out.println(list.stream().map(m -> m.toString()).collect(Collectors.joining(", ")));
