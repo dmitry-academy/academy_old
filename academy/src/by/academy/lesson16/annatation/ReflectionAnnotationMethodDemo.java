@@ -24,7 +24,7 @@ public class ReflectionAnnotationMethodDemo {
 
 			Description descriptionAnnotation = getHorsepowerMethod.getAnnotation(Description.class);
 			System.out.println(descriptionAnnotation);
-
+			System.out.println(descriptionAnnotation.value());
 		} catch (NoSuchMethodException | SecurityException e) {
 			e.printStackTrace();
 		}

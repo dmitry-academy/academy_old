@@ -21,7 +21,8 @@ public class ReflectionAnnotationDemo {
 
 			Annotation[] annotationsByType = horsepowerField.getAnnotationsByType(Description.class);
 			System.out.println(Arrays.toString(annotationsByType));
-
+			
+			System.out.println(descriptionAnnotation.value());
 		} catch (NoSuchFieldException e) {
 			e.printStackTrace();
 		} catch (SecurityException e) {
