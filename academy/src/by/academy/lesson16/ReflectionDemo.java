@@ -7,7 +7,7 @@ public class ReflectionDemo {
 	public static void main(String[] args) {
 		// example 1
 		try {
-			Class<?> carClass1 = Class.forName("by.academy.reflection.Car");
+			Class<?> carClass1 = Class.forName("by.academy.lesson16.Car");
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}

@@ -12,6 +12,9 @@ public class ReflectionMethodOtherDemo {
 
 		try {
 			Method getHorsepowerMethod = carClass.getMethod("getHorsepower");
+
+			System.out.println(getHorsepowerMethod.getReturnType());
+
 			System.out.println(getHorsepowerMethod.getDeclaringClass());
 			System.out.println(getHorsepowerMethod.isSynthetic());
 			System.out.println(getHorsepowerMethod.isBridge());

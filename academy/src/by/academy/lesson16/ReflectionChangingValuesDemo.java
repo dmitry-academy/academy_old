@@ -8,7 +8,12 @@ public class ReflectionChangingValuesDemo {
 		Class<? extends Car> carClass = car.getClass();
 		Field serialNumberField;
 		try {
+			Field horsePowerField = carClass.getDeclaredField("horsepower");
+			horsePowerField.setAccessible(true);
+
 			serialNumberField = carClass.getField("serialNumber");
+			System.out.println("Horseposer field value:" + horsePowerField.getInt(car));
+
 			System.out.println("Before change:" + serialNumberField.get(car));
 			serialNumberField.setAccessible(true);
 			serialNumberField.set(car, "37U1");

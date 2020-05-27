@@ -20,7 +20,6 @@ public class ReflectionMethodDemo {
 			System.out.println("Method name: ");
 			System.out.println(getHorsepowerMethod.getName());
 			System.out.println();
-
 			// Modifiers
 			int modifiers = getHorsepowerMethod.getModifiers();
 			System.out.println("Modifiers: ");
@@ -32,7 +31,7 @@ public class ReflectionMethodDemo {
 			System.out.println("Return types(getHorsepower): ");
 			System.out.println(getHorsepowerMethod.getReturnType());
 			System.out.println(getHorsepowerMethod.getGenericReturnType());
-			
+
 			Method logAndReturnMethod = carClass.getMethod("logAndReturn", Object.class);
 			System.out.println("Return types(logAndReturn): ");
 			System.out.println(logAndReturnMethod.getReturnType());
