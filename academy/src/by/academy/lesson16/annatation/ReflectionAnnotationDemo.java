@@ -28,5 +28,9 @@ public class ReflectionAnnotationDemo {
 		} catch (SecurityException e) {
 			e.printStackTrace();
 		}
+		
+		alala: {
+			
+		}
 	}
 }
