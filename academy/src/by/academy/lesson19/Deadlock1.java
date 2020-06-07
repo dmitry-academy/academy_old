@@ -4,8 +4,8 @@ public class Deadlock1 {
 	  public static void main(String[] args){
 	    //These are the two resource objects 
 	    //we'll try to get locks for
-	    final Object resource1 = "resource1";
-	    final Object resource2 = "resource2";
+	    final Integer resource1 = 1;
+	    final Integer resource2 = 2;
 	    //Here's the first thread.
 	    //It tries to lock resource1 then resource2
 	    Thread t1 = new Thread() {

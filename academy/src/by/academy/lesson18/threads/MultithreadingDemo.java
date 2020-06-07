@@ -15,9 +15,9 @@ public class MultithreadingDemo {
 //		Thread t2 = new Thread(new MyRunnableImpl());
 //		Thread t3 = new Thread(new MyRunnableImpl());
 
-		Thread t1 = new MyThread();
-		Thread t2 = new MyThread();
-		Thread t3 = new MyThread();
+		Thread t1 = new MyThread("Hello there 1");
+		Thread t2 = new MyThread("Hello there 2");
+		Thread t3 = new MyThread("Hello there 3");
 
 		t1.start();
 		t2.start();
