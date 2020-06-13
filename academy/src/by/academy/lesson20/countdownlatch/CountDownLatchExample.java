@@ -19,10 +19,12 @@ public class CountDownLatchExample {
 		public Rider(int riderNumber, int riderSpeed) {
 			this.riderNumber = riderNumber;
 			this.riderSpeed = riderSpeed;
+
 		}
 
 		@Override
 		public void run() {
+
 			try {
 				System.out.printf("Всадник %d вышел на старт\n", riderNumber);
 				// Уменьшаем счетчик на 1

@@ -6,6 +6,7 @@ import java.util.concurrent.LinkedTransferQueue;
 import java.util.concurrent.TransferQueue;
 
 public class TransferQueueExample {
+	
 	TransferQueue<String> queue = null;
 
 	String WAIT_producer = "Producer waiting to transfer : ";
