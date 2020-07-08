@@ -20,7 +20,7 @@ public class Cat {
 
 	public Cat(int a, String name) {
 		this.name = name;
-		this.kolichestvoLap = a; 
+		this.kolichestvoLap = a;
 	}
 
 	public void changeName(String newName) {
@@ -46,5 +46,16 @@ public class Cat {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Cat [kolichestvoLap=");
+		builder.append(kolichestvoLap);
+		builder.append(", name=");
+		builder.append(name);
+		builder.append("]");
+		return builder.toString();
 	}
 }

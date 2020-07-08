@@ -33,4 +33,8 @@ public final class Cat extends Animal {
 	public int sum(int a, int b) {
 		return a + b;
 	}
+	
+	public void test() {
+		play();
+	}
 }

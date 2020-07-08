@@ -20,26 +20,26 @@ public class Money {
 	}
 
 	public void transferToRub(double val) {
-		this.rub = val / 100;
-		this.kop = val % 100;
+		this.rub = (long) val / 100;
+		this.kop = (char) (val % 100);
 	}
 
 	public void transferToRub() {
 
 //		return number of coins
-		rub = (int) value;
+//		rub = (int) value;
 	}
 
 	public long convertToRub() {
 
 //		return number of coins
-		rub = (int) value;
+//		rub = (int) value;
 		return rub;
 	}
 
 	public char transferToKop() {
 
-		kop = (char) ((value - (int) value) * 100);
+//		kop = (char) ((value - (int) value) * 100);
 		return kop;
 	}
 
