@@ -1,31 +1,35 @@
 package by.academy.lesson4.inheritance;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import by.academy.lesson4.finals.Animal;
 
 public class Cat extends Animal {
 
-	public int numberOfLaps = 3;
-	public static List<String> list = new ArrayList<String>();
-	static {
-		list.add("Hello");
-		list.add("World");
+	@Override
+	public void test() {
+		System.out.println();
 	}
 
-	
-	public void t() {
-		
+	@Override
+	public void voice() {
+		System.out.println("Meow");
 	}
-	public static void test() {
-		
-		System.out.println("our list: ");
 
-		for (String s : list) {
-			System.out.println(s);
+	public void voice(String name) {
+		System.out.println("Meow " + name);
+	}
+
+	public void voice(String name, int n) {
+		for (int i = 0; i < n; i++) {
+			System.out.println("Meow " + name);
 		}
-		System.out.println("----------");
 	}
 
+	public void voice(int n, String name) {
+		for (int i = 0; i < n; i++) {
+			System.out.println("Meow " + name);
+		}
+	}
+
+	public void voice(String[] i, String[] strings) {
+	}
 }

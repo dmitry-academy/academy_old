@@ -1,20 +1,17 @@
 package by.academy.lesson4.finals;
 
-public class Animal {
+public abstract class Animal {
 
 	protected String name;
 	protected int age;
 	protected int weight;
 	public int numberOfLaps = 4;
-	private int numberOfHvost;
 
 	public Animal() {
 		super();
 	}
 
-	public Animal(int i) {
-		this.numberOfHvost = i;
-	}
+	public abstract void test();
 
 	public static int test = 4;
 
@@ -64,14 +61,6 @@ public class Animal {
 
 	public void setNumberOfLaps(int numberOfLaps) {
 		this.numberOfLaps = numberOfLaps;
-	}
-
-	public int getNumberOfHvost() {
-		return numberOfHvost;
-	}
-
-	public void setNumberOfHvost(int numberOfHvost) {
-		this.numberOfHvost = numberOfHvost;
 	}
 
 	public static int getTest() {

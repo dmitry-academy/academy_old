@@ -9,12 +9,11 @@ public class Car {
 	}
 
 	public void setCarBrand(String carBrand) {
-		this.carBrand = this.carBrand + carBrand + " made in Germany";
+		this.carBrand = carBrand + " made in Germany";
 	}
 
 	@Override
 	public String toString() {
 		return carBrand;
 	}
-
 }

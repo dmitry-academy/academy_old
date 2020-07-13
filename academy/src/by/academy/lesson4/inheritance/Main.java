@@ -4,18 +4,30 @@ public class Main {
 
 	public static void main(String... args) {
 //		Cat motroskin = new Cat();
-//		motroskin.
-////		System.out.println(Math.sqrt(4));
 //
-////		motroskin.eat();
-////		motroskin.voice();
+//		System.out.println(Math.sqrt(4));
+//
+//		motroskin.eat();
+//		motroskin.voice();
+//
+//		Cheetah c = new Cheetah();
+//		c.eat();
+//		c.voice();
+//
+//		Animal animal = new Cat();
+//		Animal animal = new Cat();
+//
+//		animal.eat();
+//		animal.voice();
+//
+//		animal.test();
 
-		Cat.test();
+		Cat cat = new Cat();
+		cat.voice();
+		System.out.println();
 
-	}
-
-	public void test() {
-
+		Cheetah che = new Cheetah();
+		che.voice();
 	}
 
 }
