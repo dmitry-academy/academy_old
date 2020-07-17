@@ -74,12 +74,12 @@ public class Program {
 		Product product = null;
 
 		switch (type) {
-		case "Car":
-			product = new Car();
-			break;
-		case "Vino":
-			product = new Vino();
-			break;
+//		case "Car":
+//			product = new Car();
+//			break;
+//		case "Vino":
+//			product = new Vino();
+//			break;
 		default:
 			product = new Product();
 			break;

@@ -1,10 +1,9 @@
 package by.academy.lesson5.dealmaker;
+
 public class Product {
 
 	private String title;
-
 	private double price;
-
 	private int quantity;
 
 	public double getCost() {
@@ -19,8 +18,7 @@ public class Product {
 	}
 
 	/**
-	 * @param title
-	 *            the title to set
+	 * @param title the title to set
 	 */
 	public void setTitle(String title) {
 		this.title = title;
@@ -34,8 +32,7 @@ public class Product {
 	}
 
 	/**
-	 * @param price
-	 *            the price to set
+	 * @param price the price to set
 	 */
 	public void setPrice(double price) {
 		this.price = price;
@@ -49,11 +46,13 @@ public class Product {
 	}
 
 	/**
-	 * @param quantity
-	 *            the quantity to set
+	 * @param quantity the quantity to set
 	 */
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
 
+	public void printInfo() {
+		System.out.println(title + " " + getCost() + " " + price);
+	}
 }
