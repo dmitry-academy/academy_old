@@ -7,5 +7,8 @@ public class StringBuilderEquals {
 
 		System.out.println(stringBuilder1.equals(stringBuilder2));
 		System.out.println(stringBuilder1 == stringBuilder2);
+
+		System.out.println(stringBuilder1.toString().equals(stringBuilder2.toString()));
+
 	}
 }

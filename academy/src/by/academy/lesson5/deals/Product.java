@@ -84,7 +84,10 @@ public class Product implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Product [title=" + title + ", price=" + price + ", quantity=" + quantity + "]";
+		StringBuilder builder = new StringBuilder();
+		builder.append("Product [title=").append(title).append(", price=").append(price).append(", quantity=")
+				.append(quantity).append("]");
+		return builder.toString();
 	}
 
 }

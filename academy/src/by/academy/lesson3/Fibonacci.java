@@ -11,6 +11,8 @@ public class Fibonacci {
 		for (int i = 1; i <= number; i++) {
 			System.out.print(fibonacci2(i) + " ");
 		}
+
+//		System.out.println(fibonacci(number));
 		scan.close();
 	}
 
