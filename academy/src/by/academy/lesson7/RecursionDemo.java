@@ -11,6 +11,7 @@ public class RecursionDemo {
 			System.out.println("никаких больше stack overflow");
 			return;
 		}
+
 		System.out.println("Hi there!" + counter);
 		test(++counter);
 	}

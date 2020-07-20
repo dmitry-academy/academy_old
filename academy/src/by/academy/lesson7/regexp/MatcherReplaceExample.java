@@ -10,7 +10,8 @@ public class MatcherReplaceExample {
 		String text = "John writes about this, and John Doe writes about that,"
 				+ " and John Wayne writes about everything.";
 
-		String patternString1 = "((John) (.+?)) ";
+//		String patternString1 = "((John) (.+?)) ";
+		String patternString1 = "John";
 
 		Pattern pattern = Pattern.compile(patternString1);
 		Matcher matcher = pattern.matcher(text);

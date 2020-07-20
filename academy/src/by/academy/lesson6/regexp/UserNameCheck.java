@@ -36,8 +36,9 @@ public class UserNameCheck {
 		String validationString = "abcdefghijklmnopqrstuvwxyz0123456789_";
 
 		for (char c : symbols) {
-			if (validationString.indexOf(c) == -1)
+			if (validationString.indexOf(c) == -1) {
 				return false;
+			}
 		}
 
 		return true;

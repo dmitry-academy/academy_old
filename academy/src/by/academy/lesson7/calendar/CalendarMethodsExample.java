@@ -9,6 +9,7 @@ public class CalendarMethodsExample {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy MMM dd");
 
 		Calendar calendar = new GregorianCalendar(2013, 10, 28);
+
 		System.out.println("Date : " + sdf.format(calendar.getTime()));
 
 		// add one month

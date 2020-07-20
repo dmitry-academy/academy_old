@@ -17,7 +17,7 @@ public class TestRegExp {
 //
 //		String str1 = "Test     multiple            spaces";
 //		System.out.println(str1.replaceAll(" +", " "));
-//		Pattern p = Pattern.compile("\\b[abc]+\\S*");
+//		Pattern p = Pattern.compile("[abc]+\\S*");
 //		Matcher m = p.matcher("aaa - bcccwec - dccc");
 //		while (m.find()) {
 //			System.out.println(m.start());
@@ -26,11 +26,13 @@ public class TestRegExp {
 //		}
 
 		Pattern pattern = Pattern.compile("www\\.(\\w+)\\.by");
-		Matcher matcher = pattern.matcher("   www.tut.by    ");
-		matcher.find();
-		System.out.println(matcher.group(0));
-		System.out.println(matcher.group(1));
-		System.out.println(matcher.group(2));
+		Matcher matcher = pattern.matcher("   www.tut.by   www.test.by ");
+		while (matcher.find()) {
+			System.out.println(matcher.group(0));
+			System.out.println(matcher.group(1));
+		}
+
+//		System.out.println(matcher.group(2));
 	}
 
 }

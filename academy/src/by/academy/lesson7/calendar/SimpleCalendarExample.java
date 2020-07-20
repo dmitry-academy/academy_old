@@ -9,9 +9,10 @@ public class SimpleCalendarExample {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy MMM dd HH:mm:ss");
 		Calendar calendar = new GregorianCalendar(2013, 0, 31);
 		System.out.println(sdf.format(calendar.getTime()));
-		
-		Calendar calendar1 = new GregorianCalendar(-11111, 0, 31);
+
+		Calendar calendar1 = new GregorianCalendar(1, 0, 31);
+		System.out.println(calendar1);
 		System.out.println(sdf.format(calendar1.getTime()));
-		
+
 	}
 }

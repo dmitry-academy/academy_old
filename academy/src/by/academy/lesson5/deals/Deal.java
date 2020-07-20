@@ -1,6 +1,10 @@
 package by.academy.lesson5.deals;
 
-import by.academy.lesson8.annotation.B;
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
 import by.academy.lesson8.annotation.Version;
 
 @Version(info = "alala")
@@ -10,9 +14,11 @@ public class Deal {
 	private User seller;
 	private Product[] products;
 	private double fullPrice;
+	private Date deadline;
 
 	public Deal() {
 		super();
+		init();
 	}
 
 	public Deal(User buyer, User seller, Product[] products) {
@@ -20,6 +26,21 @@ public class Deal {
 		this.buyer = buyer;
 		this.seller = seller;
 		this.products = products;
+		init();
+	}
+
+	private void init() {
+		Calendar c = new GregorianCalendar();
+		c.add(Calendar.DAY_OF_MONTH, 10);
+		this.deadline = c.getTime();
+	}
+
+	public Date getDeadline() {
+		return deadline;
+	}
+
+	public void setDeadline(Date deadline) {
+		this.deadline = deadline;
 	}
 
 	public User getBuyer() {
@@ -62,5 +83,19 @@ public class Deal {
 		}
 		this.fullPrice = summ;
 	}
-	
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Deal [buyer=");
+		builder.append(buyer);
+		builder.append(", seller=");
+		builder.append(seller);
+		builder.append(", products=");
+		builder.append(Arrays.toString(products));
+		builder.append(", fullPrice=");
+		builder.append(fullPrice);
+		builder.append("]");
+		return builder.toString();
+	}
 }

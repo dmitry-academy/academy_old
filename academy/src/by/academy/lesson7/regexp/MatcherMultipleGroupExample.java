@@ -16,7 +16,8 @@ public class MatcherMultipleGroupExample {
 		Matcher matcher = pattern.matcher(text);
 
 		while (matcher.find()) {
-			System.out.println("found: " + matcher.group(1) + " " + matcher.group(2));
+			System.out
+					.println(matcher.group(0) + " :found: (1)(" + matcher.group(1) + ") (2)(" + matcher.group(2) + ")");
 		}
 	}
 }
