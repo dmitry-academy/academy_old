@@ -12,12 +12,12 @@ public class StringDemo4 {
 		for (int i = 0; i < arr.length; i++) {
 
 			int currentUniqueCounter = 0;
-			char[] cArr = new char[66000];
+			char[] cArr = new char[65538];
 			for (char c : arr[i].toCharArray()) {
 				cArr[c]++;
 			}
 			for (char c : cArr) {
-				if (c != 0) {
+				if (c > 0) {
 					currentUniqueCounter++;
 				}
 			}
