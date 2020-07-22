@@ -5,7 +5,7 @@ public enum Day {
 
 	private int dayNumber;
 
-	Day(int dayNumber) {
+	private Day(int dayNumber) {
 		this.dayNumber = dayNumber;
 	}
 

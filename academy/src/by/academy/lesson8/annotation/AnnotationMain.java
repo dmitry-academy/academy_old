@@ -1,7 +1,5 @@
 package by.academy.lesson8.annotation;
 
-import java.util.LinkedList;
-
 public class AnnotationMain {
 
 	public static void main(String[] args) {
@@ -14,6 +12,7 @@ public class AnnotationMain {
 //		Version version = (Version) c2.getAnnotation(Version.class);
 //
 //		System.out.println(version.info());
+
 		A a = new A();
 		Class<? extends A> c2 = a.getClass();
 		Version version = (Version) c2.getAnnotation(Version.class);
