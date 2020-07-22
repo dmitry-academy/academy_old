@@ -1,2 +1,4 @@
 Создать класс перечесление (Enum), который будет отображать статус сделки.
 New, InProgress, Done.
+
+New, In Progress, Done
