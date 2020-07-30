@@ -1,6 +1,8 @@
 package by.academy.lesson8.generics;
 
-public class Average<T extends Number> {
+import java.io.Serializable;
+
+public class Average<T extends Number & Serializable> {
 
 	private T[] array;
 

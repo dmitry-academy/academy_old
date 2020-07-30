@@ -2,6 +2,7 @@ package by.academy.lesson8.generics;
 
 public class AverageDemo {
 	public static void main(String[] args) {
+
 		Integer[] intArray = { 1, 2, 3, 4, 5 };
 		Average<Integer> integerAverage = new Average<>(intArray);
 		System.out.println("Среднее значения для Integer " + integerAverage.average());

@@ -8,9 +8,15 @@ public class Main {
 	public static void main(String[] args) {
 		Box<Product> box = new Box<Product>();
 		box.addItem(new Product("Колбаса", 1000, 10));
+		box.addItem(new Dog());
 
 		Box<Dog> dogs = new Box<Dog>();
 		Dog dog = dogs.getItem(1);
+		
+		test(dogs);
 	}
 
+	public static void test(Box<Product> box) {
+
+	}
 }

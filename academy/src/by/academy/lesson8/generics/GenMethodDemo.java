@@ -10,7 +10,7 @@ public class GenMethodDemo {
 	 * @param <V>
 	 * @return
 	 */
-	public static <T, V> boolean isIn(T x, V[] array) {
+	public static <T extends Number, V> boolean isIn(T x, V[] array) {
 		for (V element : array) {
 			if (x.equals(element)) {
 				return true;

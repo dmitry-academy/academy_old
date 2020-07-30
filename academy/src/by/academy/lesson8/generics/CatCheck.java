@@ -10,16 +10,20 @@ public class CatCheck {
 		isIn(new Cheetah());
 		isIn(new Cat());
 		isIn(new Animal());
-		
-		test(new Cheetah());
-		test(new Cat());
-		test(new Animal());
-		
-	}
-	public static <T super Cat> boolean test(T x) {
 
-		return true;
+//		test(new Cheetah());
+//		test(new Cat());
+//		test(new Animal());
+
 	}
+
+	public class Test<V super Cat>{
+		public boolean test(V x) {
+			return true;
+
+		}
+	}
+
 	public static <T extends Cat> boolean isIn(T x) {
 
 		return true;

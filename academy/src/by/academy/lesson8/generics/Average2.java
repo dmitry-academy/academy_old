@@ -20,4 +20,5 @@ public class Average2<T extends Number> {
 	boolean sameAvg(Average2<?> ob) {
 		return average() == ob.average();
 	}
+
 }

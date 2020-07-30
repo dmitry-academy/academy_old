@@ -29,7 +29,7 @@ public class Box<T> {
 		if (items == null) {
 			items = (T[]) new Object[10];
 		}
-
+		
 		items[counter++] = item;
 	}
 

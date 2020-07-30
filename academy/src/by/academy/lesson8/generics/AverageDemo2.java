@@ -1,31 +1,44 @@
 package by.academy.lesson8.generics;
 
+import java.util.Arrays;
+
 public class AverageDemo2 {
 	public static void main(String[] args) {
 		Integer[] intArray = { 1, 2, 3, 4, 5 };
+		System.out.println(Arrays.toString(intArray));
 		Average2<Integer> iob = new Average2<>(intArray);
-		System.out.println("Среднее значения для Integer " + iob.average());
+		System.out.println(Arrays.toString(intArray));
 
-		Double[] doubleArray = { 1.1, 2.2, 3.3, 4.4, 5.5 };
-		Average2<Double> dob = new Average2<>(doubleArray);
-		System.out.println("Среднее значения для Double " + dob.average());
+//		System.out.println("Среднее значения для Integer " + iob.average());
 
-		Float[] floatArray = { 1.0F, 2.0F, 3.0F, 4.0F, 5.0F };
-		Average2<Float> fob = new Average2<>(floatArray);
-		System.out.println("Среднее значения для Float " + fob.average());
-
-		System.out.print("Средние значения для iob и dob ");
-		if (iob.sameAvg(dob)) {
-			System.out.println("одинаковые.");
-		} else {
-			System.out.println("разные.");
-		}
-
-		System.out.print("Средние значения для iob и fob ");
-		if (iob.sameAvg(fob)) {
-			System.out.println("одинаковые.");
-		} else {
-			System.out.println("разные.");
-		}
+		
+		
+		
+		
+		
+//		
+//		Double[] doubleArray = { 1.1, 2.2, 3.3, 4.4, 5.5 };
+//		Average2<Double> dob = new Average2<>(doubleArray);
+//		System.out.println("Среднее значения для Double " + dob.average());
+//
+//		Float[] floatArray = { 1.0F, 2.0F, 3.0F, 4.0F, 5.0F };
+//		Average2<Float> fob = new Average2<>(floatArray);
+//		System.out.println("Среднее значения для Float " + fob.average());
+//
+//		System.out.print("Средние значения для iob и dob ");
+//		if (iob.sameAvg(dob)) {
+//			System.out.println("одинаковые.");
+//		} else {
+//			System.out.println("разные.");
+//		}
+//
+//		System.out.print("Средние значения для iob и fob ");
+//		if (iob.sameAvg(fob)) {
+//			System.out.println("одинаковые.");
+//		} else {
+//			System.out.println("разные.");
+//		}
+//
+//		Average3 avg3 = new Average3(fob);
 	}
 }
