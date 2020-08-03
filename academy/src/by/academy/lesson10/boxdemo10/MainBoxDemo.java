@@ -14,6 +14,9 @@ public class MainBoxDemo {
 		integer1.addToEnd(90);
 		System.out.println(Arrays.toString(integer1.getArray()));
 
+		for (Integer i : integer1.getArray()) {
+			System.out.println(i);
+		}
 	}
 
 }
