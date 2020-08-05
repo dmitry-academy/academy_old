@@ -4,6 +4,11 @@ public class User {
 
 	private String username;
 	private String password;
+	private int test;
+
+	public User(int i) {
+		this.test = i;
+	}
 
 	public String getUsername() {
 		return username;
@@ -23,11 +28,7 @@ public class User {
 
 	@Override
 	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((password == null) ? 0 : password.hashCode());
-		result = prime * result + ((username == null) ? 0 : username.hashCode());
-		return result;
+		return 1;
 	}
 
 	@Override
@@ -43,6 +44,8 @@ public class User {
 			if (other.password != null)
 				return false;
 		} else if (!password.equals(other.password))
+			return false;
+		if (test != other.test)
 			return false;
 		if (username == null) {
 			if (other.username != null)
