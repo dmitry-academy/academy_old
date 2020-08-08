@@ -1,21 +1,27 @@
 package by.academy.lesson11.exceptions;
 
-import java.util.Scanner;
+import by.academy.lesson11.CustomException;
 
 class Main {
 	public static void main(String[] args) {
-		int[] m = { -1, 0, 1 };
-		Scanner sc = new Scanner(System.in);
-		try {
-			int a = sc.nextInt();
-			m[a] = 4 / a;
-			System.out.println(m[a]);
-		} catch (ArithmeticException e) {
-			System.out.println("Произошла недопустимая арифметическая операция");
-		} catch (ArrayIndexOutOfBoundsException e) {
-			System.out.println("Обращение по недопустимому индексу массива");
-		}
-		sc.close();
+		System.out.println(test1(2, 1));
+	}
 
+	private static String test1(int a, int b) {
+		try {
+			return test2(a, b);
+		} catch (CustomException | ArrayIndexOutOfBoundsException e) {
+			return "catch";
+		} finally {
+			return "still alive";
+		}
+	}
+
+	private static String test2(int a, int b) throws Exception, CustomException {
+		if (a > b) {
+			throw new CustomException("test");
+		} else {
+			throw new Exception("test");
+		}
 	}
 }
