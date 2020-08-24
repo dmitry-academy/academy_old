@@ -2,6 +2,8 @@ package by.academy.lesson13;
 
 import java.io.IOException;
 
+import by.academy.lesson13.demo.Car;
+
 @FunctionalInterface
 public interface Searchable {
 

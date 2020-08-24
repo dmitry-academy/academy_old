@@ -1,9 +1,12 @@
 package by.academy.lesson13;
 
+import by.academy.lesson13.demo.Car;
+import by.academy.lesson13.demo.CarTypes;
+
 public class LambdaDemo {
 
 	public static void main(String... args) {
-		Car[] cars = { new Car("BWM"), new Car("Mersedes", CarType.BIG) };
+		Car[] cars = { new Car("BWM"), new Car("Mersedes", CarTypes.BIG) };
 
 		getCompactCarsNumber(cars);
 	}
@@ -11,7 +14,7 @@ public class LambdaDemo {
 	private static int getCompactCarsNumber(Car[] cars) {
 		int result = 0;
 		for (Car car : cars) {
-			if (car.getType().equals(CarType.COMPACT)) {
+			if (car.getType().equals(CarTypes.COMPACT)) {
 				result++;
 			}
 		}

@@ -1,15 +1,17 @@
-package by.academy.lesson13;
+package by.academy.lesson13.demo;
+
+import by.academy.lesson13.Engine;
 
 public class Car implements Cloneable {
 
 	private String model;
-	private CarType type;
+	private CarTypes type;
 	private double cost;
 	private Engine e;
 
 	public Car(String model) {
 		this.model = model;
-		this.type = CarType.COMPACT;
+		this.type = CarTypes.COMPACT;
 	}
 
 	public Engine getE() {
@@ -20,25 +22,25 @@ public class Car implements Cloneable {
 		this.e = e;
 	}
 
-	public Car(String model, CarType type) {
+	public Car(String model, CarTypes type) {
 		this.model = model;
 		this.type = type;
 	}
 
-	public Car(String model, CarType type, double cost) {
+	public Car(String model, CarTypes type, double cost) {
 		this.model = model;
 		this.type = type;
 		this.cost = cost;
 	}
 
-	public Car(String model, CarType type, double cost, Engine e) {
+	public Car(String model, CarTypes type, double cost, Engine e) {
 		this.model = model;
 		this.type = type;
 		this.cost = cost;
 		this.e = e;
 	}
 
-	public Car(CarType type, double cost) {
+	public Car(CarTypes type, double cost) {
 		this.type = type;
 		this.cost = cost;
 	}
@@ -55,11 +57,11 @@ public class Car implements Cloneable {
 		return model;
 	}
 
-	public CarType getType() {
+	public CarTypes getType() {
 		return type;
 	}
 
-	public void setType(CarType type) {
+	public void setType(CarTypes type) {
 		this.type = type;
 	}
 
