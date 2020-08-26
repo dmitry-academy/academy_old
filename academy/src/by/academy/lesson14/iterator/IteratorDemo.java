@@ -6,7 +6,7 @@ import java.util.Random;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class IteratroDemo {
+public class IteratorDemo {
 	public static void main(String... args) {
 
 		List<Integer> list = Stream.generate(() -> new Random().nextInt(100)).limit(10).collect(Collectors.toList());
