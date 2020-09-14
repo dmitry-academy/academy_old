@@ -7,7 +7,6 @@ public class JoinDemo {
 		JoinRunnable c = new JoinRunnable("C");
 
 		a.start();
-		
 		try {
 			a.join();
 		} catch (InterruptedException e) {
