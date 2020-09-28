@@ -3,10 +3,10 @@ package by.academy.lesson20.harbor;
 import java.util.Random;
 import java.util.concurrent.Semaphore;
 
-public class Ship extends Thread {
+public class _Ship extends Thread {
 
 	private int loadedContainers;
-	private Harbor harbor;
+	private _Harbor harbor;
 	private int workCount;
 	private static final int MAX_CONTAINERS = 1000;
 	private static final int MAX_LOADED_TO_SHIP = 10;
@@ -15,7 +15,7 @@ public class Ship extends Thread {
 
 	public static Semaphore SEMAPHORE = new Semaphore(COUNT_PORTS, true);
 
-	public Ship(Harbor harbor, int workCount, int containers, boolean[] CONTROL_PLACES) {
+	public _Ship(_Harbor harbor, int workCount, int containers, boolean[] CONTROL_PLACES) {
 		this.harbor = harbor;
 		this.workCount = workCount;
 		this.loadedContainers = containers;

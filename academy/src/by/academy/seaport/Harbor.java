@@ -1,21 +1,26 @@
-package by.academy.lesson20.harbor;
+package by.academy.seaport;
 
+import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Harbor {
 	private AtomicInteger containers = new AtomicInteger();
+	private AtomicBoolean isFree = new AtomicBoolean();
 	private int maximumContainers;
 
 	public Harbor(int containersInHarbor, int maximumContainers) {
 		this.containers.set(containersInHarbor);
 		this.maximumContainers = maximumContainers;
+		isFree.set(true);
 	}
 
 	public boolean addContainer() {
 		if (containers.get() < maximumContainers) {
 			return true;
-		} else
+		} else {
+			System.out.println("WE CAN'T ADD CONTAINER. HARBOR IS FULL.");
 			return false;
+		}
 	}
 
 	public void getContainer() {
@@ -32,5 +37,17 @@ public class Harbor {
 
 	public int containersInHarbor() {
 		return containers.get();
+	}
+
+	public boolean canTake() {
+		return isFree.get();
+	}
+
+	public boolean take() {
+		return isFree.compareAndSet(true, false);
+	}
+
+	public boolean release() {
+		return isFree.compareAndSet(false, true);
 	}
 }
