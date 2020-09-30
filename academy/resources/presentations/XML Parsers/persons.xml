@@ -1,0 +1,20 @@
+<persons>
+	<person number="1">
+		<firstName>Petia</firstName>
+		<lastName>Javakin</lastName>
+		<age>25</age>
+		<gender>M</gender>
+	</person>
+	<person number="2">
+		<firstName>Masha</firstName>
+		<lastName>Javakina</lastName>
+		<age>22</age>
+		<gender>F</gender>
+	</person>
+	<person number="3">
+		<firstName>Johnny</firstName>
+		<lastName>Javakin</lastName>
+		<age>3</age>
+		<gender>M</gender>
+	</person>
+</persons>

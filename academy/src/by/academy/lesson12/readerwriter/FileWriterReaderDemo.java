@@ -14,7 +14,6 @@ public class FileWriterReaderDemo {
 
 			fw.write("Learn\nJava!\n");
 			fw.flush();
-
 			size = fr.read(array);
 			System.out.println("Количество прочитанных символов: " + size + " ");
 			for (int i = 0; i < size; i++) {
