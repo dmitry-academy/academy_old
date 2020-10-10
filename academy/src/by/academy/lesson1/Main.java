@@ -6,7 +6,7 @@ public class Main {
 
 		Cat noname = new Cat();
 		System.out.println(noname);
-
+		System.out.println("Hello cat!");
 		Cat cat = new Cat(5, "Vaska");
 //		cat.play();
 //		System.out.println(cat.getKolichestvoLap());
