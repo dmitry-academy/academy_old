@@ -1,0 +1,115 @@
+Задание 1.
+
+a) Напишите метод, который принимает в качестве параметра любую строку, например “I like Java!!!”. 
+б) Распечатать последний символ строки. Используем метод String.charAt().
+в) Проверить, заканчивается ли ваша строка подстрокой “!!!”. Используем метод String.endsWith().
+г) Проверить, начинается ли ваша строка подстрокой “I like”. Используем метод String.startsWith(). 
+д) Проверить, содержит ли ваша строка подстроку “Java”. Используем метод String.contains().
+e) Найти позицию подстроки “Java” в строке “I like Java!!!”.
+ж) Заменить все символы “а” на “о”. 
+з) Преобразуйте строку к верхнему регистру.
+и) Преобразуйте строку к нижнему регистру.
+к) Вырезать строку Java c помощью метода String.substring().
+
+Задание 2.
+
+а) Дано два числа, например 3 и 56, необходимо составить следующие строки: 
+	3 + 56 = 59 
+	3 – 56 = -53 
+	3 * 56 = 168. 
+	Используем метод StringBuilder.append(). 
+б) Замените символ “=” на слово “равно”. 
+Используйте методы StringBuilder.insert(), StringBuilder.deleteCharAt(). 
+в) Замените символ “=” на слово “равно”. 
+Используйте методы StringBuilder.replace().
+
+Задание 3.
+
+Напишите метод, заменяющий в строке каждое второе вхождение «object-oriented programming» (не учитываем регистр символов) на «OOP». Например строка
+"Object-oriented programming is a programming language model organized around objects rather than "actions" and data rather than logic. Object-oriented programming blabla. Object-oriented programming bla."
+должна быть преобразована в 
+"Object-oriented programming is a programming language model organized around objects rather than "actions" and data rather than logic. OOP blabla. Object-oriented programming bla."
+
+Задание 4.
+
+Даны строки разной длины (длина - четное число), необходимо вернуть ее два средних знака: "string" → "ri", "code" → "od", "Practice"→"ct".
+
+Задание 5. (не надо)
+
+Создать строку, используя форматирование: 
+Студент [Фамилия] получил [оценка] по [предмету]. 
+Форматирование и вывод строки на консоль написать в отдельном методе, 
+который принимает фамилию, оценку и название предмета в качестве параметров. 
+Выделить под фамилию 15 символов, под оценку 3 символа, предмет – 10.
+
+Задание 6.(не надо)
+
+Переделать toString() для класса любого класса (например Cat) используя форматирование. 
+
+Задание 7.(не надо)
+
+Создать класс Employee, у которого есть переменные класса - fullname, salary. 
+Создать массив содержащий несколько объектов этого типа. Создать класс Report, 
+который будет содержать статический метод generateReport, 
+в котором выводится информация о зарплате всех сотрудников. 
+Используйте форматировании строк. 
+Пусть salary будет выровнено по правому краю, 
+десятичное значение имеет 2 знака после запятой и можете добавить что-нибудь свое.
+
+Задание 8. (lesson 6)
+  
+Изменить регулярное выражение в примере для нахождения строк cab, ccab, cccab.
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class RegexDemo2 {
+    public static void main(String[] args) {
+        Pattern pattern = Pattern.compile("a*b");
+        Matcher matcher = pattern.matcher("aaab");
+        boolean b = matcher.matches();
+        System.out.println(b);
+    }
+}
+
+Задание 9. (lesson 6)
+
+Изменить регулярное выражение в примере – пусть reference1.org тоже считается ссылкой.
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class RegexDemo3 {
+    public static void main(String[] args) {
+        System.out.println(test("google.com"));
+        System.out.println(test("reference1.by"));
+        System.out.println(test("reference1.org"));
+    }
+
+    public static boolean test(String testString) {
+        Pattern pattern = Pattern.compile(".+\\.(com|ua|ru)");
+        Matcher matcher = pattern.matcher(testString);
+        return matcher.matches();
+    }
+}
+​
+Задание 10. (lesson 6)
+
+Дана строка “Versions: Java  5, Java 6, Java   7, Java 8, Java 12.”  
+Найти все подстроки "Java X" и распечатать их.
+
+Задание 11. (lesson 6)
+
+Найти слово, в котором число различных символов минимально. 
+Слово может содержать буквы и цифры. 
+Если таких слов несколько, найти первое из них. 
+Например в строке "fffff ab f 1234 jkjk" найденное слово должно быть "fffff".
+
+Задание 12. (lesson 6)
+
+Предложение состоит из нескольких слов, разделенных пробелами. 
+Например: "One two three раз два три one1 two2 123 ". 
+Найти количество слов, содержащих только символы латинского алфавита.
+
+Задание 13. (не надо)
+Предложение состоит из нескольких слов, например: 
+"Если есть хвосты по дз, начните с 1 не сданного задания. 123 324 111 4554". 
+Среди слов, состоящих только из цифр, найти слово-палиндром.
