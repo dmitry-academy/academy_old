@@ -94,7 +94,7 @@ public class RegexDemo3 {
 Задание 10. (lesson 6)
 
 Дана строка “Versions: Java  5, Java 6, Java   7, Java 8, Java 12.”  
-Найти все подстроки "Java X" и распечатать их.
+Найти все подстроки "Java <X>" и распечатать их.
 
 Задание 11. (lesson 6)
 
