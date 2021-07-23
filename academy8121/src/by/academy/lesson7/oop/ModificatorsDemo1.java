@@ -7,7 +7,6 @@ public class ModificatorsDemo1 extends Modificators {
 	public static void main(String[] args) {
 
 		Modificators object = new Modificators();
-
 //		object.defaultVar = 10;
 		object.publicVar = 20;
 //		object.protectedVar = 30;

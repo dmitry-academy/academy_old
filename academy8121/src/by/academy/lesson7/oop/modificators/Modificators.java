@@ -1,10 +1,9 @@
-package by.academy.lesson7.oop.test;
-
+package by.academy.lesson7.oop.modificators;
 public class Modificators {
 	public int publicVar; // открытый уровень доступа
 	private int privateVar; // закрытый уровень доступа
 	int defaultVar; // уровень доступа по умолчанию
-	static protected int protectedVar; // уровень доступа по protected
+	protected int protectedVar; // уровень доступа по protected
 
 	@Override
 	public String toString() {

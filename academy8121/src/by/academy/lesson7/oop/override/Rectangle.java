@@ -5,6 +5,7 @@ public class Rectangle extends Figure {
 		super(dim1, dim2);
 	}
 
+	@Override
 	public double area() {
 		System.out.println("B области четырехугольника.");
 		return dim1 * dim2;
