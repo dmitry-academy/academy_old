@@ -8,13 +8,13 @@ public class StaticDemo {
 		System.out.println("Hello I'm static block");
 	}
 
-	{
-		System.out.println("Hello I'm block");
-	}
-
 	public StaticDemo() {
 		super();
 		System.out.println("Hello I'm StaticDemo constructor");
+	}
+
+	{
+		System.out.println("Hello I'm block");
 	}
 
 	public static void doSomething() {

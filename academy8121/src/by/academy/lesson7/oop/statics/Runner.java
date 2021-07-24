@@ -6,7 +6,7 @@ public class Runner {
 //		ob.go();
 //		Sub.go();
 
-//		StaticDemo s = new StaticDemo();
+		StaticDemo s = new StaticDemo();
 //		StaticDemo s1 = new StaticDemo();
 //
 //		s.intVariable++;
