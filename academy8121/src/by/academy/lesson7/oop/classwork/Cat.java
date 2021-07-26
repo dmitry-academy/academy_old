@@ -11,4 +11,9 @@ public class Cat extends Animal {
 	public void say() {
 		System.out.println("мяу мяу мяу!");
 	}
+
+	@Override
+	public void test() {
+
+	}
 }

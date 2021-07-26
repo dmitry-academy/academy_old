@@ -7,7 +7,7 @@ public class Triangle2 extends Figure2 {
 	}
 
 	public double area() {
-//		System.out.println("B области треугольника.");
+		System.out.println("B области треугольника.");
 		return dim1 * dim2 / 2;
 	}
 }

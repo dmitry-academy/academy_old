@@ -11,18 +11,18 @@ public class StaticVars {
 
 	{
 		arr = new String[10];
-		arr[0] = "test string";
+		arr[0] = "test string1";
+	}
+
+	static {
+		arr = new String[10];
+		arr[0] = "test string2";
+		System.out.println("static block");
 	}
 
 	public StaticVars() {
 		super();
 		System.out.println("StaticVars constructor");
-	}
-
-	static {
-		arr = new String[10];
-		arr[0] = "test string";
-		System.out.println("static block");
 	}
 
 	public static void main(String[] args) {

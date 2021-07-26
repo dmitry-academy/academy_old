@@ -1,6 +1,6 @@
 package by.academy.lesson7.oop.classwork;
 
-public class Animal extends Creature {
+public class Animal extends Creature implements Walkable {
 
 	public void eat() {
 		System.out.println("Eat!");
@@ -12,5 +12,15 @@ public class Animal extends Creature {
 
 	public void say() {
 		System.out.println("...");
+	}
+
+	protected void test() {
+
+	}
+
+	@Override
+	public void walk() {
+		// TODO Auto-generated method stub
+
 	}
 }

@@ -7,7 +7,7 @@ public class Rectangle2 extends Figure2 {
 	}
 
 	public double area() {
-//		System.out.println("B области четырехугольника.");
+		System.out.println("B области четырехугольника.");
 		return dim1 * dim2;
 	}
 }
