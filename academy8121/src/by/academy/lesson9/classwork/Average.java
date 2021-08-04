@@ -25,7 +25,7 @@ public class Average<T extends Number & Serializable & Comparable<T>> {
 		}
 		double sum = 0;
 
-		for (Number n : items) {
+		for (T n : items) {
 			sum += n.doubleValue();
 		}
 		return sum / items.length;

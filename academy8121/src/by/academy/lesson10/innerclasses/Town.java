@@ -36,13 +36,14 @@ public class Town {
 
 		Town.Street street1 = town.new Street();
 		Town.Street street2 = new Town().new Street();
+
 		Town.Street.House house = new Town().new Street().new House();
 		house.test(1);
 //		town.createStreet();
 //		street1.printAddress();
 //		street2.printAddress();
 //
-//		street1.testX(1);
+		street1.testX(1);
 	}
 
 	public void createStreet() {

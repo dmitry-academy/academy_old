@@ -1,24 +1,37 @@
 package by.academy.lesson9.generics;
-public class TwoGen<T, V> {
-    private T obT;
-    private V obV;
 
-    public TwoGen(T obT, V obV) {
-        this.obT = obT;
-        this.obV = obV;
-    }
+public class TwoGen<T extends CharSequence, V extends CharSequence> {
 
-    public void showTypes() {
-        System.out.println("Тип T: " + obT.getClass().getName());
-        System.out.println("Тип V: " + obV.getClass().getName());
-    }
+	private T obT;
+	private V obV;
 
-    public T getObT() {
-        return obT;
-    }
+	public TwoGen() {
+		super();
+	}
 
-    public V getObV() {
-        return obV;
-    }
+	public String getObtClassName() {
+
+		if (obT == null) {
+			return null;
+		}
+		return obT.getClass().getName();
+	}
+
+	public TwoGen(T obT, V obV) {
+		this.obT = obT;
+		this.obV = obV;
+	}
+
+	public void showTypes() {
+		System.out.println("Тип T: " + obT.getClass().getName());
+		System.out.println("Тип V: " + obV.getClass().getName());
+	}
+
+	public T getObT() {
+		return obT;
+	}
+
+	public V getObV() {
+		return obV;
+	}
 }
-

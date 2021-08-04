@@ -1,6 +1,7 @@
 package by.academy.lesson9.generics;
 
 public class GenMethodDemo {
+
 	/**
 	 * Является ли объект x элементом массива array
 	 *
@@ -10,7 +11,7 @@ public class GenMethodDemo {
 	 * @param <V>
 	 * @return
 	 */
-	public static <T, V> boolean isIn(T x, V[] array) {
+	public static <T extends Number, V> boolean isIn(T x, V[] array) {
 		for (V element : array) {
 			if (x.equals(element)) {
 				return true;
@@ -26,19 +27,19 @@ public class GenMethodDemo {
 			System.out.println("2 входит в массив intArray");
 		}
 
-		if (!isIn(7, intArray)) {
+		if (!isIn(2, intArray)) {
 			System.out.println("7 не входит в intArray");
 		}
 		System.out.println();
 
-		String[] strArray = { "one", "two", "three", "four", "five" };
-
-		if (isIn("two", strArray)) {
-			System.out.println("two входит в массив strArray");
-		}
-
-		if (!isIn("seven", strArray)) {
-			System.out.println("seven не входит в массив strArray");
-		}
+//		String[] strArray = { "one", "two", "three", "four", "five" };
+//
+//		if (isIn("two", strArray)) {
+//			System.out.println("two входит в массив strArray");
+//		}
+//
+//		if (!isIn("seven", strArray)) {
+//			System.out.println("seven не входит в массив strArray");
+//		}
 	}
 }
