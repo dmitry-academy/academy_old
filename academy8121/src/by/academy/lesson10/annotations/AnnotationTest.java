@@ -1,6 +1,6 @@
 package by.academy.lesson10.annotations;
 
-@Version(info = "3.3.3")
+@Version(aliases = { "str", "sefs" })
 public class AnnotationTest {
 
 	@Version(info = "3.3.3")
