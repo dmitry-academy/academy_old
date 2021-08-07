@@ -1,6 +1,8 @@
 package by.academy.lesson11.classwork;
 
-public class CustomLinkedList<T> {
+import java.util.Iterator;
+
+public class CustomLinkedList<T> implements Iterable<T> {
 
 	private Node<T> head;
 	private Node<T> tail;
@@ -39,16 +41,21 @@ public class CustomLinkedList<T> {
 		list.add(3);
 		list.add(4);
 
-		list.print();
+//		list.print();
 
-		list.remove(3);
-		list.print();
+//		list.remove(3);
+//		list.print();
+//
+//		list.remove(0);
+//		list.print();
 
-		list.remove(0);
-		list.print();
+//		System.out.println(list.getHeadValue());
+//		System.out.println(list.getTailValue());
+		Iterator<Integer> iterator = list.iterator();
 
-		System.out.println(list.getHeadValue());
-		System.out.println(list.getTailValue());
+		while (iterator.hasNext()) {
+			System.out.println(iterator.next());
+		}
 
 	}
 
@@ -68,10 +75,7 @@ public class CustomLinkedList<T> {
 
 	public void remove(int index) {
 
-//		if (index > size - 1 && index >= 0) {
-//			return;
-//		}
-		if (size == 1) {
+		if (size == 1 && index == 0) {
 			head = null;
 			tail = null;
 			size = 0;
@@ -86,15 +90,7 @@ public class CustomLinkedList<T> {
 			return;
 		}
 		if (index >= 0 && index < size) {
-			int counter = 0;
-			Node<T> node = head;
-			while (node != null) {
-				if (counter == index) {
-					break;
-				}
-				node = node.next;
-				counter++;
-			}
+			Node<T> node = getNode(index);
 
 			Node<T> prev = node.prev;
 			Node<T> next = node.next;
@@ -119,9 +115,30 @@ public class CustomLinkedList<T> {
 
 	}
 
-	public T get(int index) {
+	private Node<T> getNode(int index) {
+		int counter = 0;
+		Node<T> node = head;
+		while (node != null) {
+			if (counter == index) {
+				break;
+			}
+			node = node.next;
+			counter++;
+		}
+		return node;
+	}
 
-		return null;
+	public T get(int index) {
+		int counter = 0;
+		Node<T> node = head;
+		while (node != null) {
+			if (counter == index) {
+				break;
+			}
+			node = node.next;
+			counter++;
+		}
+		return node.value;
 	}
 
 	class Node<T> {
@@ -142,6 +159,32 @@ public class CustomLinkedList<T> {
 			return builder.toString();
 		}
 
+	}
+
+	public Iterator<T> iterator() {
+		return new InnerIterator();
+	}
+
+	class InnerIterator implements Iterator<T> {
+		Node<T> current = null;
+
+		@Override
+		public boolean hasNext() {
+			if (current == null) {
+				return head != null;
+			}
+			return current.next != null;
+		}
+
+		@Override
+		public T next() {
+			if (current == null) {
+				current = head;
+			}
+			T value = current.value;
+			current = current.next;
+			return value;
+		}
 	}
 
 }
