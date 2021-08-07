@@ -6,11 +6,112 @@ public class CustomLinkedList<T> {
 	private Node<T> tail;
 	private Integer size = 0;
 
-	public void add(T items) {
+	public void add(T item) {
+
+		Node<T> node = new Node<>();
+		node.value = item;
+
+		if (tail == null) {
+			head = node;
+			tail = node;
+		} else {
+			tail.next = node;
+			node.prev = tail;
+			tail = node;
+		}
+		size++;
+	}
+
+	public void print() {
+		Node<T> node = head;
+		while (node != null) {
+			System.out.print(node.value + " ");
+			node = node.next;
+		}
+		System.out.println();
 
 	}
 
+	public static void main(String... args) {
+		CustomLinkedList<Integer> list = new CustomLinkedList<>();
+		list.add(1);
+		list.add(2);
+		list.add(3);
+		list.add(4);
+
+		list.print();
+
+		list.remove(3);
+		list.print();
+
+		list.remove(0);
+		list.print();
+
+		System.out.println(list.getHeadValue());
+		System.out.println(list.getTailValue());
+
+	}
+
+	public T getTailValue() {
+		if (tail != null) {
+			return tail.value;
+		}
+		return null;
+	}
+
+	public T getHeadValue() {
+		if (head != null) {
+			return head.value;
+		}
+		return null;
+	}
+
 	public void remove(int index) {
+
+//		if (index > size - 1 && index >= 0) {
+//			return;
+//		}
+		if (size == 1) {
+			head = null;
+			tail = null;
+			size = 0;
+			return;
+		}
+
+		if (index == size - 1) {
+			Node<T> prev = tail.prev;
+			prev.next = null;
+			tail = prev;
+			size--;
+			return;
+		}
+		if (index >= 0 && index < size) {
+			int counter = 0;
+			Node<T> node = head;
+			while (node != null) {
+				if (counter == index) {
+					break;
+				}
+				node = node.next;
+				counter++;
+			}
+
+			Node<T> prev = node.prev;
+			Node<T> next = node.next;
+
+			if (index == 0) {
+				head = next;
+			}
+			if (prev != null) {
+				prev.next = next;
+			}
+			next.prev = prev;
+
+			size--;
+			return;
+		}
+
+		System.out.println("Index of bound");
 
 	}
 
@@ -26,7 +127,7 @@ public class CustomLinkedList<T> {
 	class Node<T> {
 		Node<T> next;
 		Node<T> prev;
-		T value;
+		T value;;
 
 		@Override
 		public String toString() {
