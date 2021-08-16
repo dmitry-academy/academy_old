@@ -34,18 +34,15 @@ public class ValidationDemo {
 	public static boolean isValid(String login, String password, String confirmPassword)
 			throws WrongLoginException, WrongPasswordException {
 		if (login == null) {
-			throw new WrongLoginException(
-					"Поле логин не заполнено");
+			throw new WrongLoginException("Поле логин не заполнено");
 		}
 		if (password == null) {
-			throw new WrongPasswordException(
-					"Поле пароль не заполнено");
+			throw new WrongPasswordException("Поле пароль не заполнено");
 		}
 		if (confirmPassword == null) {
-			throw new WrongPasswordException(
-					"Поле повторите пароль не заполнено");
+			throw new WrongPasswordException("Поле повторите пароль не заполнено");
 		}
-		
+
 		Matcher matchLog = pattern.matcher(login);
 		Matcher matchPass = pattern.matcher(password);
 		if (!matchLog.matches()) {
