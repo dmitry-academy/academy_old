@@ -6,10 +6,10 @@ import java.util.List;
 public class ArrayListAddDemo {
 	public static void main(String[] args) {
 		List<String> arrayList = new ArrayList<>();
-		
+
 //		String [] arr = new String[10];
 //		arr[0] = "C";
-		
+
 		System.out.println("Начальный размер arrayList: " + arrayList.size());
 
 		arrayList.add("C");

@@ -15,10 +15,11 @@ public class WrongHashCat {
 
 	@Override
 	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((username == null) ? 0 : username.hashCode());
-		return result;
+//		final int prime = 31;
+//		int result = 1;
+//		result = prime * result + ((username == null) ? 0 : username.hashCode());
+//		return result;
+		return 0;
 	}
 
 	@Override

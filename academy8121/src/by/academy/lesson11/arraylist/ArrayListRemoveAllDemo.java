@@ -21,9 +21,9 @@ public class ArrayListRemoveAllDemo {
 		System.out.println("Содержимое arrayList до removeAll: " + arrayList);
 
 		arrayList.removeAll(removeElements);
-//		arrayList.remove(arrayList.size() - 1);
-//		arrayList.remove("A");
-//		arrayList.remove(1);
+		arrayList.remove(arrayList.size() - 1);
+		arrayList.remove("A");
+		arrayList.remove(1);
 		System.out.println("Содержимое arrayList после removeAll: " + arrayList);
 	}
 }
