@@ -1,0 +1,5 @@
+Добавить аннотацию ProducerInfo, которая содержит информацию о поставщике.
+String name
+String company
+String[] prodyctTypes
+int number
