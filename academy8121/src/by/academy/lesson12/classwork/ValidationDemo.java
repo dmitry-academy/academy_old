@@ -21,6 +21,7 @@ public class ValidationDemo {
 		String password = null;
 		String confPass = null;
 		boolean conf = false;
+		 
 		try {
 			conf = isValid(login, password, confPass);
 			System.out.println(conf);
