@@ -17,7 +17,6 @@ public class ValidationDemo {
 	private static Pattern pattern = Pattern.compile("[a-zA-Z0-9_]{1,20}");
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		String login = "";
 		String password = null;
 		String confPass = null;
