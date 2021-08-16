@@ -45,6 +45,7 @@ public class ValidationDemo {
 			throw new WrongPasswordException(
 					"Поле повторите пароль не заполнено");
 		}
+		
 		Matcher matchLog = pattern.matcher(login);
 		Matcher matchPass = pattern.matcher(password);
 		if (!matchLog.matches()) {
